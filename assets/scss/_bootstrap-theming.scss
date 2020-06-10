@@ -59,3 +59,28 @@ text-align: center;
   }
  } 
 
+.panel{
+  border: none;
+  background-color: lighten($color-gray, 8%);
+  margin-bottom: $gap * 2;
+  &-info > .panel-heading {
+  color: $color-light;
+  background-color: $color-accent;
+  border: none;
+}
+&-title{
+  font-size: 1.2rem;
+}
+&-body{
+  border: 1px solid $color-gray;
+  border-radius: 0 0 4px 4px;
+}
+}
+
+.input {
+ &-lg,
+ &-group-lg >.form-control {
+ font-size: 14px;
+  
+} 
+}
