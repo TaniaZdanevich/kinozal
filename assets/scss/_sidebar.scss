@@ -78,11 +78,11 @@
          border-top: 1px solid $color-gray;
          margin-right: -1px;
          margin-left: -1px;
-         padding: 10px 10px 10px $gap; 
+         padding: 10px 50px 10px $gap; 
 
          &:first-child{
          border-radius: 0;
-         border-top: 0;
+         border-top: none;
              } 
          &:last-child{
           border-radius: 0;
