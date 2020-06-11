@@ -14,3 +14,30 @@ a{
         color: $color-accent;
     }
 }
+h1{
+    margin: (-$gap / 2) 0 ($gap * 3);
+    font-family: $font-header;
+    width: 100%;
+    @include xs-min{
+        font-size: 3rem;
+    }
+    @include xs{
+        font-size: 2rem;
+    }
+
+
+    &::after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        bottom: 8px;
+        margin-left: $gap;
+        border-bottom: 3px solid rgba($color-accent, 0.7%);
+       
+    }
+
+}
+section{
+    overflow-y: hidden;
+
+}
