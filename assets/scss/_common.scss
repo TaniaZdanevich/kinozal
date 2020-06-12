@@ -6,10 +6,7 @@ body{
     font-family: $font-main;
     overflow-y: scroll;
 }
-section{
-    position: relative;
-    overflow: hidden;
-}
+
 a{
     color: $color-primary;
     &:hover,
@@ -18,15 +15,53 @@ a{
         color: $color-accent;
     }
 }
+
+section{
+    
+    overflow: hidden;
+}
+
 h1{
-    margin: (-$gap / 2) 0 ($gap * 3);
     font-family: $font-header;
-    width: 100%;
+    margin: (-$gap / 2) 0 ($gap * 3);
     @include xs-min{
         font-size: 3rem;
     }
     @include xs{
         font-size: 2rem;
+    }
+    position: relative;
+
+    &::after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        margin:0.85em 0 0 $gap;
+        border-bottom: 3px solid rgba($color-accent, 0.7%);
+    }
+    
+    
+    }
+
+
+h2{
+    font-family: $font-header;
+    margin: ($gap * 4) 0 ($gap * 3) ($gap * 3);
+     @include xs-min{
+        font-size: 2.5rem;
+    }
+    @include xs{
+        font-size: 1.75rem;
+    }
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        width: $gap * 2;
+        left: - ($gap * 2.5);
+        margin: 0.25em 0 0 0;
+        border-bottom: 3px solid rgba($color-accent, 0.7%);
+
     }
 
 
@@ -34,24 +69,12 @@ h1{
         position: absolute;
         content: "";
         width: 100%;
-        bottom: 8px;
-        margin-left: $gap;
+        margin:0.85em 0 0 $gap;
         border-bottom: 3px solid rgba($color-accent, 0.7%);
-       
     }
-
-}
-h2{
-    margin: ($gap * 4) 0 ($gap * 3) ($gap * 3);
-    font-family: $font-header;
-
-    @include xs-min{
-        font-size: 2.5rem;
-    }
-    @include xs{
-        font-size: 1.75rem;
-    }
-
+    
+    
+    
 }
 h3{
     @include xs-min{
@@ -62,3 +85,8 @@ h3{
     }
 
 }
+
+
+
+  
+
