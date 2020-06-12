@@ -1,0 +1,19 @@
+.footer{
+    padding-top: $gap * 3;
+    background-color: $color-dark;
+    color: $color-light;
+    ul{
+        padding: 0;
+        list-style: none;
+    }
+    a{
+        color: lighten($color-dark, 36%);
+    }
+    &-fifth{
+        margin: 20px 0;
+        text-align: center;
+        a{
+            color: darken($color-light, 6%);
+        }
+    }
+}

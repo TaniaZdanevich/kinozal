@@ -337,6 +337,30 @@ h2 {
           transform: translateY(-50%);
 }
 
+.footer {
+  padding-top: 45px;
+  background-color: #232323;
+  color: #ffffff;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer a {
+  color: #7f7f7f;
+}
+
+.footer-fifth {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.footer-fifth a {
+  color: #f0f0f0;
+}
+
 @media (min-width: 576px) {
   h1 {
     font-size: 3rem;
