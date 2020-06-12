@@ -60,17 +60,16 @@
     }
 }
 
-.top-films{
+.top-week{
 
-&-body{
-    padding-left: 0;
-    padding-right: 0;
-
-}
- &-list{
-     margin-bottom: 0;
-     position: relative;
-     &__link{
+    &-body{
+        padding-left: 0;
+        padding-right: 0;
+        }
+    &-list{
+        margin-bottom: 0;
+        position: relative;
+        &__link{
          background-color: transparent;
          border-left: none;
          border-right: none;
@@ -90,19 +89,27 @@
         &:hover,
         &:focus{
             background-color: $color-accent !important;
-            color: $color-light !important;
-
+            > a {
+                color: $color-light !important;
+                
+            }
             .badge{
                 background-color: $color-dark;
             }
-         }
+            
+          }
+          
         }
-    &__badge{
-        position: absolute;
-        right: 10px;
-        top: 50%;
-        transform: translateY(-50%);
+        &__badge{
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+
+        
+        }
+    
+    
     }
-     
-    }   
+
 }

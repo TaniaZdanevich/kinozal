@@ -52,15 +52,8 @@
 
 
 .film-news{
-   
-        
-    
     &-item{
-        &:hover{
-
-        }
-
-       
+        
         &__link{
         transition: color 0.25s;
         }  
@@ -83,4 +76,23 @@
         }
     } 
     
+}
+
+
+.film-info{
+    font-size: 1.2em;
+
+    &__well{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    &__wrapper{
+        white-space: nowrap;
+        &:not(:last-of-type){
+            margin-right: $gap;
+        }
+    }
+    &__badge{
+        font-size: 0.8em;
+    }
 }
