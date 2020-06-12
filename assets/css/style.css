@@ -253,6 +253,10 @@ h2 {
   font-size: 0.8em;
 }
 
+.film-send-comment__button {
+  float: right;
+}
+
 .vertical-slider {
   border-radius: 4px;
   overflow: hidden;
@@ -357,6 +361,7 @@ h2 {
 }
 
 .top-week-list__link:hover, .top-week-list__link:focus {
+  cursor: pointer;
   background-color: #df8a13 !important;
 }
 
@@ -390,6 +395,10 @@ h2 {
 
 .footer a {
   color: #7f7f7f;
+}
+
+.footer a:focus, .footer a:hover {
+  color: #ffffff;
 }
 
 .footer-fifth {

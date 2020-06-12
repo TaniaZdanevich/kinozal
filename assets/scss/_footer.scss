@@ -8,12 +8,17 @@
     }
     a{
         color: lighten($color-dark, 36%);
+        &:focus,
+        &:hover{
+            color: $color-light;
+            }
     }
     &-fifth{
         margin: 20px 0;
         text-align: center;
         a{
             color: darken($color-light, 6%);
+            
         }
     }
 }

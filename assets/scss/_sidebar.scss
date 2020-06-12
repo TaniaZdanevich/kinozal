@@ -88,6 +88,7 @@
              }
         &:hover,
         &:focus{
+            cursor: pointer;
             background-color: $color-accent !important;
             > a {
                 color: $color-light !important;
