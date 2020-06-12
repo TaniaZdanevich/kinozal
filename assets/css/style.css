@@ -219,6 +219,15 @@ h2::after {
   overflow: hidden;
 }
 
+.film-news-item:hover h3 > a {
+  color: #df8a13;
+}
+
+.film-news-item:hover .thumbnail,
+.film-news-item:hover .btn-warning {
+  background-color: #df8a13;
+}
+
 .film-news-item__link {
   -webkit-transition: color 0.25s;
   -o-transition: color 0.25s;
@@ -230,10 +239,6 @@ h2::after {
   -webkit-transition: background-color 0.25s;
   -o-transition: background-color 0.25s;
   transition: background-color 0.25s;
-}
-
-.film-news-item__thumbnail:hover, .film-news-item__thumbnail:focus {
-  background-color: #df8a13;
 }
 
 .film-news-item__text {

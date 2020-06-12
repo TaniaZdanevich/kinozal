@@ -53,6 +53,15 @@
 
 .film-news{
     &-item{
+        &:hover{
+             h3 > a{
+                color: $color-accent;
+            }
+            .thumbnail,
+            .btn-warning{
+                background-color: $color-accent;
+            }
+            }
         
         &__link{
         transition: color 0.25s;
@@ -60,11 +69,7 @@
         &__thumbnail{
             margin-bottom: 0;
             transition: background-color 0.25s;
-            &:hover,
-            &:focus{
-                background-color: $color-accent;
-            }
-        }
+                    }
         &__text{
             text-align: justify;
         }
@@ -79,26 +84,6 @@
 }
 
 
-.film-info{
-    font-size: 1.2em;
+  
+  
 
-    &__well{
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-    }
-    &__wrapper{
-        white-space: nowrap;
-        &:not(:last-of-type){
-            margin-right: $gap;
-        }
-    }
-    &__badge{
-        font-size: 0.8em;
-    }
-}
-
-.film-send-comment{
-    &__button{
-        float: right;
-    }
-}
